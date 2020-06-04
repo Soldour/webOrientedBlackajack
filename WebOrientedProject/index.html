@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/Style/css/style.css">
+    <title>Document</title>
+</head>
+
+<body style="background-color: darkgray;">
+
+
+    <div class="container-5" style=" background-color: chocolate;   box-shadow: 0px 10px 20px blue;;">
+        <h3> BlackJack</h3>
+        <h3> <span id="blackjack-result">let's play</span></h3>
+        <div class="flex-blakjack-row-1">
+            <div id="your-box">
+
+                <h2>you: <span id="your-blackjack-result">0</span></h2>
+
+            </div>
+            <div id="dealer-box">
+
+                <h2>Dealer: <span id="dealer-blackjack-result">0</span></h2>
+
+            </div>
+        </div>
+        <div class="flex-blakjack-row-2">
+            <div>
+                <button class="btn-lg btn-primary" id="blackjack-hit-button">Hit</button>
+                <button class="btn-lg btn-warning" id="blackjack-stand-button"> Stand</button>
+                <button class="btn-lg btn-danger" id="blackjack-deal-button">Deal</button>
+            </div>
+
+
+
+        </div>
+        <div class="flex-blakjack-row-3">
+            <table style="border: 1px solid black; ">
+                <tr>
+                    <th>wins</th>
+                    <th>Loss</th>
+                    <th>Draws</th>
+                </tr>
+                <tr>
+                    <td id="wins">0</td>
+                    <td id="looses">0</td>
+                    <td id="drew">0</td>
+                </tr>
+            </table>
+
+
+
+        </div>
+
+    </div>
+
+    <div class="container-4">
+        <div id="change-btn-color"></div>
+        <div class="flex-box-pick-color">
+            <form action="">
+                <select name="backdrop" id="background" onchange="buttonColorChnge(this)">
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                </select>
+            </form>
+            <button class="btn btn-primary" onclick="window.location.href='https://youtube.com';" >youTube!</button>
+            <button class="btn btn-danger" onclick="window.location.href='https://Yahoo.com';">Yahoo!</button>
+            <button class="btn btn-warning" onclick="window.location.href='https://Google.com';">Google!</button>
+            <button class="btn btn-success" onclick="window.location.href='https://Facebook.com';">Facebook!</button>
+          
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
